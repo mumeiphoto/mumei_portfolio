@@ -521,6 +521,34 @@
   .contact-cta:hover::before { transform: scaleX(1); }
   .contact-cta:hover { color: var(--black); }
 
+  /* ── SNS Icons ── */
+  .sns-links {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+  }
+  .sns-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--gray);
+    transition: color 0.3s, transform 0.3s;
+  }
+  .sns-link:hover { color: var(--off-white); transform: translateY(-4px); }
+  .sns-link svg { width: 28px; height: 28px; fill: currentColor; }
+  .sns-link span {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+  }
+
   /* ── FOOTER ── */
   footer {
     padding: 48px;
@@ -729,8 +757,33 @@
 
 <!-- Contact -->
 <section id="contact">
-  <h2>一緒に作りましょう</h2>
   <p>撮影のご依頼・お問い合わせはこちら</p>
+
+  <!-- SNS Icons -->
+  <div class="sns-links">
+    <!-- X (Twitter) -->
+    <a href="https://x.com/muna_to_mumei?s=11" target="_blank" class="sns-link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.74l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+      </svg>
+      <span>X</span>
+    </a>
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/muna_to_mumei?igsh=MWp2MDZva2Q3Y2ZobA%3D%3D&utm_source=qr" target="_blank" class="sns-link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+      <span>Instagram</span>
+    </a>
+    <!-- note -->
+    <a href="https://note.com/fufufu_fish" target="_blank" class="sns-link">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zm5 3a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2zm0 4a1 1 0 0 0 0 2h8a1 1 0 0 0 0-2zm0 4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2z"/>
+      </svg>
+      <span>Note</span>
+    </a>
+  </div>
+
   <a href="mailto:contact@munamumei.com" class="contact-cta">Contact</a>
 </section>
 
